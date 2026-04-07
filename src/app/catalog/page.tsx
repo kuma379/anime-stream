@@ -104,48 +104,6 @@ export default async function CatalogPage({ searchParams }: Props) {
           </>
         )}
       </div>
-      <style jsx>{`
-        .catalog-filters {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 0.75rem;
-          margin-bottom: 2rem;
-          background: var(--bg-card);
-          padding: 1.25rem;
-          border-radius: 12px;
-          border: 1px solid var(--border);
-        }
-        .filter-group { flex: 1; min-width: 150px; }
-        .filter-input, .filter-select {
-          width: 100%;
-          padding: 0.6rem 0.85rem;
-          background: var(--bg-secondary);
-          border: 1px solid var(--border);
-          border-radius: 8px;
-          color: var(--text-primary);
-          font-size: 0.875rem;
-          outline: none;
-          transition: border-color 0.2s;
-        }
-        .filter-input:focus, .filter-select:focus {
-          border-color: var(--accent);
-        }
-        .filter-select option {
-          background: var(--bg-secondary);
-        }
-        .filter-btn {
-          padding: 0.6rem 1.5rem;
-          background: var(--accent);
-          color: white;
-          border: none;
-          border-radius: 8px;
-          font-weight: 600;
-          cursor: pointer;
-          transition: background 0.2s;
-          align-self: flex-end;
-        }
-        .filter-btn:hover { background: var(--accent-hover); }
-      `}</style>
     </div>
   );
 }
