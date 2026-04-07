@@ -1,3 +1,4 @@
+import type { AnimeCard } from "@/types";
 import { getGenre } from "@/lib/api";
 import ListPage from "@/components/ListPage";
 import { extractItems, extractPages } from "@/lib/extractData";
@@ -10,7 +11,7 @@ interface Props {
 export default async function GenreDetailPage({ params, searchParams }: Props) {
   const page = parseInt(searchParams.page || "1") || 1;
   const genre = params.genre;
-  let items = [];
+  let items: AnimeCard[] = [];
   let currentPage = page, totalPages = 1;
   let error = "";
 
