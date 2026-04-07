@@ -17,14 +17,4 @@ jobs:
             -H "Authorization: Bearer ${{ secrets.VERCEL_TOKEN }}" \
             -H "Content-Type: application/json" \
             "https://api.vercel.com/v13/deployments" \
-            -d "{
-              \"name\": \"anime-stream\",
-              \"project\": \"${{ secrets.VERCEL_PROJECT_ID }}\",
-              \"target\": \"production\",
-              \"gitSource\": {
-                \"type\": \"github\",
-                \"repoId\": 1203541766,
-                \"ref\": \"main\",
-                \"sha\": \"${{ github.sha }}\"
-              }
-            }" | jq -r '.url // .error.message'
+            -d "{\"name\": \"anime-stream\", \"project\": \"${{ secrets.VERCEL_PROJECT_ID }}\", \"target\": \"production\", \"gitSource\": {\"type\": \"github\", \"repoId\": 1203541766, \"ref\": \"main\", \"sha\": \"${{ github.sha }}\"} }" | jq -r '.url // .error.message'
