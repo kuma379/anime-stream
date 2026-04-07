@@ -75,29 +75,6 @@ export default async function SchedulePage({ searchParams }: Props) {
           </div>
         )}
       </div>
-      <style jsx>{`
-        .day-tabs {
-          display: flex;
-          gap: 0.5rem;
-          flex-wrap: wrap;
-          margin-bottom: 0.5rem;
-        }
-        .day-tab {
-          padding: 0.5rem 1.1rem;
-          border-radius: 8px;
-          border: 1px solid var(--border);
-          background: var(--bg-card);
-          color: var(--text-secondary);
-          font-size: 0.875rem;
-          font-weight: 500;
-          transition: all 0.2s;
-        }
-        .day-tab:hover, .day-tab.active {
-          background: var(--accent);
-          border-color: var(--accent);
-          color: white;
-        }
-      `}</style>
     </div>
   );
 }
