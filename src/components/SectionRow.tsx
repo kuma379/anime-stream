@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import AnimeCard from "./AnimeCard";
 import type { AnimeCard as AnimeCardType } from "@/types";
