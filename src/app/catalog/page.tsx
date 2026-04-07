@@ -27,7 +27,7 @@ export default async function CatalogPage({ searchParams }: Props) {
   if (searchParams.status) params.status = searchParams.status;
   params.page = page;
 
-  let items = [];
+  let items: AnimeCard[] = [];
   let currentPage = parseInt(page), totalPages = 1;
   let error = "";
 
