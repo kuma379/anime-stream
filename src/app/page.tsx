@@ -82,22 +82,6 @@ export default async function HomePage() {
           </div>
         )}
       </div>
-      <style jsx>{`
-        .empty-state {
-          text-align: center;
-          padding: 5rem 1rem;
-          color: var(--text-secondary);
-        }
-        .empty-icon {
-          font-size: 4rem;
-          margin-bottom: 1rem;
-        }
-        .empty-state h2 {
-          font-size: 1.5rem;
-          margin-bottom: 0.5rem;
-          color: var(--text-primary);
-        }
-      `}</style>
     </div>
   );
 }
