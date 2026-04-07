@@ -51,23 +51,6 @@ export default async function AllAnimePage({ searchParams }: Props) {
         params={reverse ? { reverse: "1" } : {}}
         error={error}
       />
-      <style jsx global>{`
-        .sort-btn {
-          padding: 0.4rem 1rem;
-          border-radius: 6px;
-          border: 1px solid var(--border);
-          background: var(--bg-card);
-          color: var(--text-secondary);
-          font-size: 0.875rem;
-          font-weight: 500;
-          transition: all 0.2s;
-        }
-        .sort-btn:hover, .sort-btn.active {
-          background: var(--accent);
-          border-color: var(--accent);
-          color: white;
-        }
-      `}</style>
     </div>
   );
 }
