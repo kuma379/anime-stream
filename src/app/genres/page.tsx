@@ -47,29 +47,6 @@ export default async function GenresPage() {
           <div className="loading-spinner"><p>Memuat genre...</p></div>
         )}
       </div>
-      <style jsx>{`
-        .genres-grid {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 0.75rem;
-        }
-        .genre-chip {
-          padding: 0.5rem 1.25rem;
-          background: var(--bg-card);
-          border: 1px solid var(--border);
-          border-radius: 24px;
-          color: var(--text-secondary);
-          font-size: 0.9rem;
-          font-weight: 500;
-          transition: all 0.2s;
-        }
-        .genre-chip:hover {
-          background: var(--accent);
-          border-color: var(--accent);
-          color: white;
-          transform: translateY(-2px);
-        }
-      `}</style>
     </div>
   );
 }
